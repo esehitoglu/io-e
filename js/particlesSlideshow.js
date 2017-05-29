@@ -36,17 +36,17 @@ var self = window;
 		 * List words.
 		 */
 		
-		words = [ '01.01.1992', 'Ensar Şehitoğlu', 'Front End Developer', 'İSTANBUL' ],
+		words = [ '01.01.1992', 'Ensar Şehitoğlu', 'Front End Dev.', 'İSTANBUL' ],
 		
 		/*
 		 * List colors.
 		 */
 		
 		colors = {
-			circle: [ '#e67e22', '#2c3e50' ],
-			ovals: [ '#c0392b', '#ff7e15' ],
-			drop: [ '#1d75cf', '#3a5945' ],
-			ribbon: [ '#702744', '#f98d00' ]
+			circle: [ '#00FF0C', '#fff' ],
+			ovals: [ '#c0392b', '#fff' ],
+			drop: [ '#00FFF0', '#fff' ],
+			ribbon: [ '#fff', 'yellow' ]
 		};
 	
 	/*

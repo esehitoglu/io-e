@@ -12,6 +12,7 @@
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
 	<body class="bg">
 		<div class="container">
@@ -26,11 +27,150 @@
 				<div class="ip-slideshow"></div>
 			</div>
 		</div><!-- /container -->
+		<script src="js/amplitude.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/particlesSlideshow.js"></script>
 		<script src="https://d3js.org/d3.v4.js"></script>
 		<script src="js/main.js"></script>
+
+		<!-- Begin Small Player Full Bottom -->
+		<div id="small-player-full-bottom" class="hidden-on-collapse">
+			<div id="toggle-playlist-full" class="playlist-toggle"></div>
+			<div id="small-player-full-bottom-controls">
+				<div class="amplitude-prev" id="middle-bottom-previous"></div>
+				<div class="amplitude-play-pause amplitude-paused" amplitude-main-play-pause="true" id="small-player-bottom-play-pause"></div>
+				<div class="amplitude-next" id="middle-top-next"></div>
+			</div>
+		</div>
+		<!-- End Small Player Full Bottom -->
+	</div>
+	<!-- End Small Player -->
+
+	
+	<script type="text/javascript">
+		Amplitude.init({
+			"songs": [
+				{
+					"name": "MEGA 80S",
+					"artist": "Live",
+					"album": "MP3 - 128 KBit/s",
+					"url": "http://85.25.73.164/yt/f/3b/luis_fonsi_despacito_ft._daddy_yankee_mp3_47818.mp3",
+					"live": true,
+					"cover_art_url": "images/player_mega80s.jpg"
+				},
+				{
+					"name": "MEGA 80S",
+					"artist": "Live",
+					"album": "MP3 - 128 KBit/s",
+					"url": "http://80.86.90.244/yt/4/ad/jason_derulo_swalla_feat._nicki_minaj_ty_dolla_ign_official_music_video_mp3_49242.mp3",
+					"live": true,
+					"cover_art_url": "images/player_mega80s.jpg"
+				},
+				{
+					"name": "MEGA 80S",
+					"artist": "Live",
+					"album": "MP3 - 128 KBit/s",
+					"url": "http://50.30.37.48/yt/6/43/justin_bieber_sorry_dance_video_mp3_49994.mp3",
+					"live": true,
+					"cover_art_url": "images/player_mega80s.jpg"
+				}
+			],
+			"autoplay": true,
+			 "volume": 50.0,
+			"default_album_art": "images/player_mega80s.jpg"
+		});
+
+		var expanded = false;
+		var playlistEpxanded = false;
+		/*
+			jQuery Visual Helpers
+		*/
+		$('#small-player').hover(function(){
+			$('#small-player-middle-controls').show();
+			$('#small-player-middle-meta').hide();
+		}, function(){
+			$('#small-player-middle-controls').hide();
+			$('#small-player-middle-meta').show();
+
+		});
+
+		$('#top-large-album').hover(function(){
+			$('#top-header').show();
+			$('#small-player').show();
+		}, function(){
+			if( !$('#top-header').is(':hover') && !$('#small-player').is(':hover') ){
+				$('#top-header').fadeOut(1000);
+				$('#small-player').fadeOut(1000);
+			}
+		});
+
+		$('#top-header').hover(function(){
+			$('#top-header').show();
+			$('#small-player').show();
+		}, function(){
+
+		});
+
+		/*
+			Toggles Album Art
+		*/
+		$('#small-player-toggle').click(function(){
+			$('.hidden-on-collapse').show();
+			$('.hidden-on-expanded').hide();
+			/*
+				Is expanded
+			*/
+			expanded = true;
+
+			$('#small-player').css('border-top-left-radius', '0px');
+			$('#small-player').css('border-top-right-radius', '0px');
+		});
+
+		$('#top-header-toggle').click(function(){
+			$('.hidden-on-collapse').hide();
+			$('.hidden-on-expanded').show();
+			/*
+				Is collapsed
+			*/
+			expanded = false;
+
+			$('#small-player').css('border-top-left-radius', '5px');
+			$('#small-player').css('border-top-right-radius', '5px');
+		});
+
+		$('.playlist-toggle').click(function(){
+			if( playlistEpxanded ){
+				$('#small-player-playlist').hide();
+
+				$('#small-player').css('border-bottom-left-radius', '5px');
+				$('#small-player').css('border-bottom-right-radius', '5px');
+
+				$('#large-album-art').css('border-bottom-left-radius', '5px');
+				$('#large-album-art').css('border-bottom-right-radius', '5px');
+
+				playlistEpxanded = false;
+			}else{
+				$('#small-player-playlist').show();
+
+				$('#small-player').css('border-bottom-left-radius', '0px');
+				$('#small-player').css('border-bottom-right-radius', '0px');
+
+				$('#large-album-art').css('border-bottom-left-radius', '0px');
+				$('#large-album-art').css('border-bottom-right-radius', '0px');
+
+				playlistEpxanded = true;
+			}
+		})
+	</script>
+
+
+
+
+
+
+
+
 
 	</body>
 </html>

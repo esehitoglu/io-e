@@ -1,0 +1,260 @@
+div#toggle-playlist{
+    background-image: url('../images/black-playlist.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 15px;
+    margin-top: 13px;
+    cursor: pointer;
+	display:block;
+}
+div#toggle-playlist-full{
+    background-image: url('../images/black-playlist.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+/*
+    Small Player Full Bottom
+*/
+div#small-player-full-bottom{
+    padding-top: 5px;
+    margin: 25px auto 100px;
+}
+
+/*
+    Small Player Full Bottom Controls
+*/
+div#small-player-full-bottom-controls{
+    width: 72px;
+    margin: auto;
+}
+
+/*
+    Small Player Full Bottom Info
+*/
+div#small-player-full-bottom-info{
+    margin: auto;
+    margin-top: -7px;
+    width: 350px;
+    clear: both;
+}
+div#small-player-full-bottom-info span.current-time{
+    display: block;
+    float: left;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+div#small-player-full-bottom-info span.time-duration{
+    display: block;
+    float: left;
+    margin-top: -3px;
+    margin-left: 3px;
+}
+/*
+    Previous
+*/
+div#middle-top-previous{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../images/black-prev.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-right: 3px;
+	display:block;
+}
+div#middle-bottom-previous{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../images/black-prev.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-right: 3px;
+	display:block;
+}
+/*
+    Play Pause
+*/
+div#middle-top-play-pause.amplitude-play-pause{
+    height: 23px;
+    width: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+}
+div#middle-top-play-pause.amplitude-paused{
+    background-image: url('../images/black-play.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div#middle-top-play-pause.amplitude-playing{
+    background-image: url('../images/black-pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div#small-player-bottom-play-pause.amplitude-play-pause{
+    margin: auto;
+    height: 23px;
+    width: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+}
+div#small-player-bottom-play-pause.amplitude-paused{
+    background-image: url('../images/black-play.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div#small-player-bottom-play-pause.amplitude-playing{
+    background-image: url('../images/black-pause.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*
+    Next
+*/
+div#middle-top-next{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../images/black-next.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+	display: block;
+	
+}
+div#middle-bottom-next{
+    height: 20px;
+    width: 23px;
+    cursor: pointer;
+    background-image: url('../images/black-next.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+	display: block;
+}
+/*
+    Song Time Visualization
+*/
+div#song-time-visualization{
+    width: 260px;
+    height: 0px;
+    background-color: #bebebe;
+}
+div#song-time-visualization div.amplitude-song-time-visualization-status{
+    background-color: #676261;
+    height: 5px;
+}
+
+div#song-time-visualization-large{
+    width: 304px;
+    height: 5px;
+    background-color: #bebebe;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+div#song-time-visualization-large div.amplitude-song-time-visualization-status{
+    background-color: #676261;
+    height: 5px;
+}
+
+/*
+    Now Playing Information
+*/
+div.now-playing-title{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+    color: #676261;
+    line-height: 20px;
+}
+div.album-information{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 12px;
+    color: #bebebe;
+}
+/*
+    Current song time
+*/
+span.current-time{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 10px;
+    color: #676261;
+	display: block;
+}
+
+/*
+   Duration
+*/
+span.time-duration{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 10px;
+    color: #676261;
+}
+
+/*
+    Playlist
+*/
+div#small-player-playlist{
+    width: 340px;
+    height: 40px;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f4f4f4;
+    padding-top: 15px;
+    height: 200px;
+    overflow-y: scroll;
+    display: block;
+}
+div.information{
+    padding: 0px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    color: #676261;
+}
+/*
+    Playlist Items
+*/
+div.playlist-item{
+    padding: 5px 20px;
+    cursor: pointer;
+    clear: both;
+}
+div.playlist-item.amplitude-active-song-container{
+    background-color: #eee;
+}
+div.playlist-item img.album-art{
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+div.playlist-meta{
+    float: left;
+    padding-left: 10px;
+    padding-top: 8px;
+}

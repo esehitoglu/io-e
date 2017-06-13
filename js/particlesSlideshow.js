@@ -36,7 +36,7 @@ var self = window;
 		 * List words.
 		 */
 		
-		words = [ '01.01.1992', 'Ensar Şehitoğlu', 'Front End Dev.', 'İSTANBUL' ],
+		words = [ '01.01.1992', 'Ensar Şehitoğlu', '◐_◑', 'İSTANBUL' ],
 		
 		/*
 		 * List colors.
